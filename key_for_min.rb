@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
   end
 
   smallest = {
-    value: -(2**(0.size * 8 -2))
+    value: (2**(0.size * 8 -2) -1)
   }
   name_hash.each do |key, value|
     if value < smallest[:value]
